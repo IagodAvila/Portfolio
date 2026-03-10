@@ -27,117 +27,97 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const reveals = document.querySelectorAll(".reveal")
+const reveals = document.querySelectorAll(".reveal");
 
 window.addEventListener("scroll", () => {
+  reveals.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const visible = 150;
 
-  reveals.forEach((element)=>{
-
-    const windowHeight = window.innerHeight
-    const elementTop = element.getBoundingClientRect().top
-    const visible = 150
-
-    if(elementTop < windowHeight - visible){
-      element.classList.add("active")
+    if (elementTop < windowHeight - visible) {
+      element.classList.add("active");
     }
-
-  })
-
-})
+  });
+});
 
 // Scroll Animation //
 
-ScrollReveal().reveal('.header',{
-  distance:'60px',
-  duration:2000,
-  origin:'top'
-})
+ScrollReveal().reveal(".header", {
+  distance: "60px",
+  duration: 2000,
+  origin: "top",
+});
 
-ScrollReveal().reveal('.projetos-card',{
-  interval:200
-})
+ScrollReveal().reveal(".projetos-card", {
+  interval: 200,
+});
 
 // Loader //
 
 window.addEventListener("load", () => {
-
   const loader = document.getElementById("loader");
 
   loader.style.opacity = "0";
 
-  setTimeout(()=>{
+  setTimeout(() => {
     loader.style.display = "none";
-  },500)
-
+  }, 500);
 });
 
 // Modal //
 
-const modal = document.getElementById("modal")
-const modalImg = document.getElementById("modal-image")
-const closeBtn = document.querySelector(".modal-close")
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-image");
+const closeBtn = document.querySelector(".modal-close");
 
-const nextBtn = document.getElementById("next-btn")
-const prevBtn = document.getElementById("prev-btn")
+const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
 
-let imagens = []
-let index = 0
+let imagens = [];
+let index = 0;
 
-document.querySelectorAll(".projetos-card").forEach(card => {
+document.querySelectorAll(".projetos-card").forEach((card) => {
+  card.addEventListener("click", () => {
+    imagens = card.dataset.images.split(",");
 
-  card.addEventListener("click", ()=>{
+    index = 0;
+    modalImg.src = imagens[index];
 
-    imagens = card.dataset.images.split(",")
+    modal.style.display = "flex";
+  });
+});
 
-    index = 0
-    modalImg.src = imagens[index]
+nextBtn.onclick = () => {
+  index = (index + 1) % imagens.length;
+  modalImg.src = imagens[index];
+};
 
-    modal.style.display = "flex"
+prevBtn.onclick = () => {
+  index = (index - 1 + imagens.length) % imagens.length;
+  modalImg.src = imagens[index];
+};
 
-  })
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+};
 
-})
+modal.onclick = (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
 
-nextBtn.onclick = ()=>{
-
-  index = (index + 1) % imagens.length
-  modalImg.src = imagens[index]
-
-}
-
-prevBtn.onclick = ()=>{
-
-  index = (index - 1 + imagens.length) % imagens.length
-  modalImg.src = imagens[index]
-
-}
-
-closeBtn.onclick = ()=>{
-
-  modal.style.display = "none"
-
-}
-
-modal.onclick = (e)=>{
-
-  if(e.target === modal){
-    modal.style.display = "none"
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    modal.style.display = "none";
   }
 
-}
-
-document.addEventListener("keydown",(e)=>{
-
-  if(e.key === "Escape"){
-    modal.style.display = "none"
+  if (e.key === "ArrowRight") {
+    nextBtn.click();
   }
 
-  if(e.key === "ArrowRight"){
-    nextBtn.click()
+  if (e.key === "ArrowLeft") {
+    prevBtn.click();
   }
-
-  if(e.key === "ArrowLeft"){
-    prevBtn.click()
-  }
-
-})
+});

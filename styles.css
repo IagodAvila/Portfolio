@@ -222,14 +222,15 @@ h1 {
 }
 
 .projetos-card:hover {
-  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.3), 0 0 40px rgba(79, 70, 229, 0.2);
+  box-shadow:
+    0 10px 20px rgba(79, 70, 229, 0.3),
+    0 0 40px rgba(79, 70, 229, 0.2);
   transform: translateY(-5px) scale(1.05);
 }
 
 .projetos-card:hover .overlay {
   opacity: 1;
 }
-
 
 .projetos-imagem {
   height: 200px;
@@ -245,7 +246,7 @@ h1 {
 
 .caixa-texto-projetos {
   padding: 1.5rem;
-  text-align:center;
+  text-align: center;
 }
 .p-projetos {
   color: rgb(226, 232, 240, 0.8);
@@ -302,15 +303,15 @@ h1 {
   transition: all 0.5s ease;
 }
 
-.botao-form::before{
-  content:"";
-  position:absolute;
-  width:0;
-  height:100%;
-  left:0;
-  top:0;
-  background:rgba(255,255,255,0.2);
-  transition:0.4s;
+.botao-form::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.4s;
 }
 
 .botao-form:hover {
@@ -318,8 +319,8 @@ h1 {
   box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
-.botao-form:hover::before{
-  width:100%;
+.botao-form:hover::before {
+  width: 100%;
 }
 
 .particulas {
@@ -354,7 +355,7 @@ h1 {
   position: relative;
 }
 
-.footer::before{
+.footer::before {
   content: "";
   position: absolute;
   top: 0;
@@ -362,10 +363,16 @@ h1 {
   transform: translatex(-50%);
   width: 80%;
   height: 1px;
-  background: linear-gradient(90deg,transparent,var(--primaria),var(--secundaria),transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--primaria),
+    var(--secundaria),
+    transparent
+  );
 }
 
-.footer-icons{
+.footer-icons {
   margin-bottom: 15px;
 }
 
@@ -378,73 +385,77 @@ h1 {
   text-decoration: none;
 }
 
-.footer-icons a:hover{
+.footer-icons a:hover {
   color: var(--primaria);
   transform: translateY(-3px);
   text-shadow: 0 0 10px var(--primaria);
 }
 
-.modal{
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.9);
-  display:none;
-  justify-content:center;
-  align-items:center;
-  z-index:1000;
-  animation:fadeIn 0.4s;
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.4s;
 }
 
-.modal-container{
-  position:relative;
-  width:90%;
-  max-width:900px;
-  animation:zoomIn 0.4s;
+.modal-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  animation: zoomIn 0.4s;
 }
 
-.modal-image{
-  width:100%;
-  border-radius:10px;
+.modal-image {
+  width: 100%;
+  border-radius: 10px;
 }
 
-.modal-close{
-  position:absolute;
-  top:-40px;
-  right:0;
-  font-size:30px;
-  cursor:pointer;
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 30px;
+  cursor: pointer;
 }
 
-.modal-nav{
-  margin-top:15px;
-  display:flex;
-  justify-content:center;
-  gap:20px;
+.modal-nav {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-.modal-nav button{
-  background:var(--primaria);
-  border:none;
-  color:white;
-  font-size:20px;
-  padding:10px 20px;
-  cursor:pointer;
-  border-radius:6px;
+.modal-nav button {
+  background: var(--primaria);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
-@keyframes fadeIn{
-  from{opacity:0}
-  to{opacity:1}
-}
-
-@keyframes zoomIn{
-  from{
-    transform:scale(0.7);
-    opacity:0;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  to{
-    transform:scale(1);
-    opacity:1;
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
