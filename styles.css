@@ -137,6 +137,7 @@ body {
 
 h1 {
   background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 3.5rem;
@@ -178,6 +179,8 @@ h1 {
   font-size: 1.2rem;
 }
 
+/* Projetos */
+
 .projetos-titulo {
   text-align: center;
   font-size: 2.5rem;
@@ -193,6 +196,8 @@ h1 {
 }
 
 .projetos-card {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
@@ -202,34 +207,12 @@ h1 {
   transition: all 0.5s ease;
 }
 
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.overlay a {
-  padding: 10px 20px;
-  background: var(--primaria);
-  border-radius: 6px;
-  text-decoration: none;
-  color: white;
-}
 
 .projetos-card:hover {
   box-shadow:
     0 10px 20px rgba(79, 70, 229, 0.3),
     0 0 40px rgba(79, 70, 229, 0.2);
   transform: translateY(-5px) scale(1.05);
-}
-
-.projetos-card:hover .overlay {
-  opacity: 1;
 }
 
 .projetos-imagem {
@@ -252,6 +235,59 @@ h1 {
   color: rgb(226, 232, 240, 0.8);
   line-height: 1.6rem;
 }
+
+.tech-tags{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 16px;
+}
+
+.tech-tags span{
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: 1px solid var(--vidro);
+}
+
+.tech-html{
+  background: #e34f26;
+}
+
+.tech-css{
+  background:#264de4;
+}
+
+.tech-js{
+  background:#f7df1e;
+  color:black;
+}
+
+.tech-react{
+  background:#61dafb;
+  color:black;
+}
+
+.botao-projeto{
+  display: inline-block;
+  padding: 8px 18px;
+  background: linear-gradient(45deg,var(--primaria),var(--secundaria));
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.botao-projeto:hover{
+  transform:translateY(-3px);
+  box-shadow:0 5px 15px rgba(79,70,229,0.4);
+}
+
+/* Contato */
 
 .contatos-titulo {
   text-align: center;

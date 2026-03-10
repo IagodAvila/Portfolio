@@ -121,3 +121,12 @@ document.addEventListener("keydown", (e) => {
     prevBtn.click();
   }
 });
+
+// Botao Modal //
+
+document.querySelectorAll(".botao-projeto").forEach(botao => {
+  botao.addEventListener("click", e => {
+    e.stopPropagation();
+  });
+});
+
