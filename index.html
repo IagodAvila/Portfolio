@@ -3,27 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Iago d'Avila | Portfólio</title>
   </head>
   <body>
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
     <div class="particulas"></div>
-    <nav class="navegacao">
-      <ul class="menu">
-        <li>
-          <a href="#inicio" class="menu-link">Início</a>
-        </li>
-        <li>
-          <a href="#sobre" class="menu-link">Sobre</a>
-        </li>
-        <li>
-          <a href="#projetos" class="menu-link">Projetos</a>
-        </li>
-        <li>
-          <a href="#contatos" class="menu-link">Contato</a>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navegacao">
+        <ul class="menu">
+          <li>
+            <a href="#inicio" class="menu-link">Início</a>
+          </li>
+          <li>
+            <a href="#sobre" class="menu-link">Sobre</a>
+          </li>
+          <li>
+            <a href="#projetos" class="menu-link">Projetos</a>
+          </li>
+          <li>
+            <a href="#contatos" class="menu-link">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main id="inicio" class="header">
       <div>
@@ -37,7 +50,7 @@
       </div>
     </main>
 
-    <section id="sobre" class="sobre">
+    <section id="sobre" class="sobre reveal">
       <h2 class="sobre-titulo">Sobre Mim</h2>
       <div class="sobre-box">
         <p class="sobre-p">
@@ -49,22 +62,24 @@
       </div>
     </section>
 
-    <section id="projetos" class="projetos">
+    <section id="projetos" class="projetos reveal">
       <h2 class="projetos-titulo">Meus Projetos</h2>
       <div class="projetos-caixa">
-        <div class="projetos-card">
+        <div class="projetos-card" data-images="img/Cara_home.png,img/Cara_Shop.png,img/Cara_Cart.png">
           <img
             src="img/Cara_home.png"
             alt="projeto e-commerce cara"
             class="projetos-imagem"
           />
+          <div class="overlay">
+            <a href="#">Ver Projeto</a>
+          </div>
           <div class="caixa-texto-projetos">
             <h3 class="info-projetos">E-commerce de Roupas</h3>
             <p class="p-projetos">
-              nterface de e-commerce responsiva desenvolvida para praticar
-              estruturação de páginas web, organização de produtos e layout
-              moderno. O projeto inclui páginas de loja, navegação e seções de
-              produtos estilizadas com CSS.
+              Interface de e-commerce responsiva desenvolvida com HTML, CSS e
+              JavaScript. O projeto apresenta layout moderno, navegação entre
+              páginas e organização de produtos utilizando Flexbox e Grid.
             </p>
           </div>
         </div>
@@ -74,6 +89,9 @@
             alt="projeto e-commerce cara"
             class="projetos-imagem"
           />
+          <div class="overlay">
+            <a href="#">Ver Projeto</a>
+          </div>
           <div class="caixa-texto-projetos">
             <h3 class="info-projetos">DevStore Slider</h3>
             <p class="p-projetos">
@@ -90,6 +108,9 @@
             alt="projeto e-commerce cara"
             class="projetos-imagem"
           />
+          <div class="overlay">
+            <a href="#">Ver Projeto</a>
+          </div>
           <div class="caixa-texto-projetos">
             <h3 class="info-projetos">Cadastro de Usuários</h3>
             <p class="p-projetos">
@@ -104,6 +125,19 @@
       </div>
     </section>
 
+    <div id="modal" class="modal">
+      <div class="modal-container">
+        <span class="modal-close">&times;</span>
+
+        <img id="modal-image" class="modal-image" />
+
+        <div class="modal-nav">
+          <button id="prev-btn">❮</button>
+          <button id="next-btn">❯</button>
+        </div>
+      </div>
+    </div>
+
     <section id="contatos" class="contatos">
       <h2 class="contatos-titulo">Entre em Contato</h2>
 
@@ -113,11 +147,14 @@
         onsubmit="enviarWhats(event)"
       >
         <div class="group-form">
-          <input placeholder="Nome" class="campo-form" id="nome" />
+          <label for="nome">Nome</label>
+          <input placeholder="Nome" class="campo-form" id="nome" required />
         </div>
-        <div id="group-form">
+        <div class="group-form">
+          <label for="mensagem">Mensagem</label>
           <textarea
-            placeholder="Digite sua Mensagem"
+            placeholder="Digite sua mensagem"
+            required
             class="campo-form"
             id="mensagem"
             rows="6"
@@ -128,21 +165,27 @@
       </form>
     </section>
 
-    <script>
-      function enviarWhats(event) {
-        event.preventDefault();
+    <footer class="footer">
+      <div class="footer-icons">
+        <a href="https://github.com/IagodAvila" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/iago-d-avila-851399332/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a
+          href="mailto:iago.davila.dev@outlook.com?subject=Contato%20pelo%20Portfólio"
+        >
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p>© 2026 Iago d'Avila - Todos os direitos reservados</p>
+    </footer>
 
-        const nome = document.getElementById("nome").value;
-        const mensagem = document.getElementById("mensagem").value;
-        const telefone = "5531992065206";
-
-        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
-        const msgFormatada = encodeURIComponent(texto);
-
-        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-
-        window.open(url, "_blank");
-      }
-    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
+  <script src="script.js"></script>
 </html>
