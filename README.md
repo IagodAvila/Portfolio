@@ -6,7 +6,7 @@ Aqui apresento projetos desenvolvidos durante meus estudos e práticas com foco 
 🌐 Preview do Portfólio
 
 <p align="center">
-  <img src="./preview.png" width="800">
+  <img src="./preview.png" width="500">
 </p>
 
 🔗 Acesse o site:
