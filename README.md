@@ -5,8 +5,7 @@ Aqui apresento projetos desenvolvidos durante meus estudos e práticas com foco 
 
 🌐 Preview do Portfólio
 
-
-
+![Preview do Portfólio](./preview.png)
 
 🔗 Acesse o site:
 https://iagodavila.github.io/Portfolio/
