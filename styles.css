@@ -228,6 +228,9 @@ h1 {
 }
 
 .caixa-texto-projetos {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 1.5rem;
   text-align: center;
 }
@@ -241,10 +244,13 @@ h1 {
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 12px 0 16px;
+  margin: auto 0 16px;
 }
 
 .tech-tags span{
+  display: inline-block;
+  flex-wrap: wrap;
+  gap: 10px;
   text-align: center;
   font-size: 0.8rem;
   font-weight: bold;
@@ -253,6 +259,11 @@ h1 {
   border: 1px solid var(--vidro);
 }
 
+.project-btn {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
 .tech-html{
   background: #e34f26;
 }
@@ -268,6 +279,11 @@ h1 {
 
 .tech-react{
   background:#61dafb;
+  color:black;
+}
+
+.tech-tailwind{
+  background:#38bdf8;
   color:black;
 }
 
