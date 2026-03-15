@@ -15,21 +15,13 @@ function enviarWhats(event) {
   window.open(url, "_blank");
 }
 
-// Navbar Scroll //
+
+// Navbar + Reveal //
 
 const navbar = document.querySelector(".navegacao");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
-  } else {
-    navbar.classList.remove("scrolled");
-  }
-});
-
 const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", () => {
+function reveal() {
   reveals.forEach((element) => {
     const windowHeight = window.innerHeight;
     const elementTop = element.getBoundingClientRect().top;
@@ -39,9 +31,25 @@ window.addEventListener("scroll", () => {
       element.classList.add("active");
     }
   });
+}
+
+window.addEventListener("scroll", () => {
+
+  // Navbar effect
+  if (window.scrollY > 50) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+
+  // Reveal animation
+  reveal();
 });
 
-// Scroll Animation //
+window.addEventListener("load", reveal); // resolve bug ao dar reload
+
+
+// Scroll Animation (ScrollReveal) //
 
 ScrollReveal().reveal(".header", {
   distance: "60px",
@@ -52,6 +60,7 @@ ScrollReveal().reveal(".header", {
 ScrollReveal().reveal(".projetos-card", {
   interval: 200,
 });
+
 
 // Loader //
 
@@ -64,6 +73,7 @@ window.addEventListener("load", () => {
     loader.style.display = "none";
   }, 500);
 });
+
 
 // Modal //
 
@@ -109,6 +119,7 @@ modal.onclick = (e) => {
 };
 
 document.addEventListener("keydown", (e) => {
+
   if (e.key === "Escape") {
     modal.style.display = "none";
   }
@@ -120,13 +131,14 @@ document.addEventListener("keydown", (e) => {
   if (e.key === "ArrowLeft") {
     prevBtn.click();
   }
+
 });
 
-// Botao Modal //
+
+// Botão Modal //
 
 document.querySelectorAll(".botao-projeto").forEach(botao => {
   botao.addEventListener("click", e => {
     e.stopPropagation();
   });
 });
-
