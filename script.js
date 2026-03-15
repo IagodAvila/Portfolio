@@ -1,4 +1,6 @@
-// WhatsApp Form //
+// =============================
+// WhatsApp Form
+// =============================
 
 function enviarWhats(event) {
   event.preventDefault();
@@ -16,53 +18,55 @@ function enviarWhats(event) {
 }
 
 
-// Navbar + Reveal //
+// =============================
+// Navbar Scroll Effect
+// =============================
 
 const navbar = document.querySelector(".navegacao");
-const reveals = document.querySelectorAll(".reveal");
-
-function reveal() {
-  reveals.forEach((element) => {
-    const windowHeight = window.innerHeight;
-    const elementTop = element.getBoundingClientRect().top;
-    const visible = 150;
-
-    if (elementTop < windowHeight - visible) {
-      element.classList.add("active");
-    }
-  });
-}
 
 window.addEventListener("scroll", () => {
-
-  // Navbar effect
   if (window.scrollY > 50) {
     navbar.classList.add("scrolled");
   } else {
     navbar.classList.remove("scrolled");
   }
-
-  // Reveal animation
-  reveal();
-});
-
-window.addEventListener("load", reveal); // resolve bug ao dar reload
-
-
-// Scroll Animation (ScrollReveal) //
-
-ScrollReveal().reveal(".header", {
-  distance: "60px",
-  duration: 2000,
-  origin: "top",
-});
-
-ScrollReveal().reveal(".projetos-card", {
-  interval: 200,
 });
 
 
-// Loader //
+// =============================
+// Reveal Animation
+// =============================
+
+window.addEventListener("load", () => {
+
+  const reveals = document.querySelectorAll(".reveal");
+
+  function revealElements() {
+
+    const windowHeight = window.innerHeight;
+
+    reveals.forEach(el => {
+
+      const rect = el.getBoundingClientRect();
+
+      if (rect.top < windowHeight * 0.85) {
+        el.classList.add("active");
+      }
+
+    });
+
+  }
+
+  revealElements();
+
+  window.addEventListener("scroll", revealElements);
+
+});
+
+
+// =============================
+// Loader
+// =============================
 
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
@@ -75,7 +79,9 @@ window.addEventListener("load", () => {
 });
 
 
-// Modal //
+// =============================
+// Modal
+// =============================
 
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-image");
@@ -88,14 +94,18 @@ let imagens = [];
 let index = 0;
 
 document.querySelectorAll(".projetos-card").forEach((card) => {
+
   card.addEventListener("click", () => {
+
     imagens = card.dataset.images.split(",");
 
     index = 0;
     modalImg.src = imagens[index];
 
     modal.style.display = "flex";
+
   });
+
 });
 
 nextBtn.onclick = () => {
@@ -135,10 +145,14 @@ document.addEventListener("keydown", (e) => {
 });
 
 
-// Botão Modal //
+// =============================
+// Botão do Modal
+// =============================
 
 document.querySelectorAll(".botao-projeto").forEach(botao => {
+
   botao.addEventListener("click", e => {
     e.stopPropagation();
   });
+
 });

@@ -176,12 +176,12 @@ h1 {
 
 .projetos{
   padding: 4rem 2rem 6rem;
-  scroll-margin-top: 35px;
+  scroll-margin-top: 80px;
 }
 
 .contatos{
   padding: 4rem 2rem 5rem;
-  scroll-margin-top: 80px;
+  scroll-margin-top: 60px;
 }
 
 
@@ -212,7 +212,7 @@ h1 {
 .projetos-titulo {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .projetos-caixa {
@@ -558,7 +558,7 @@ h1 {
   }
 
   .footer{
-    margin-top: 0rem;
+    margin: 0rem;
     padding-top: 1.5rem 1rem;
 }
 }
