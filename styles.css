@@ -470,6 +470,19 @@ h1 {
   text-shadow: 0 0 10px var(--primaria);
 }
 
+.footer-icons .footer-email,
+.footer-icons .footer-social {
+  align-items: center;
+  display: inline-flex;
+  font-size: 0.95rem;
+  gap: 0.45rem;
+}
+
+.footer-email i,
+.footer-social i {
+  font-size: 1.5rem;
+}
+
 .modal {
   position: fixed;
   inset: 0;
