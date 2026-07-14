@@ -245,8 +245,12 @@ h1 {
 
 .projetos-imagem {
   height: 200px;
+  min-height: 200px;
+  max-height: 200px;
   width: 100%;
   object-fit: cover;
+  display: block;
+  flex-shrink: 0;
 }
 
 .info-projetos {
