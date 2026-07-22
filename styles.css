@@ -314,6 +314,14 @@ h1 {
   color:black;
 }
 
+.tech-typescript{
+  background:#3178c6;
+}
+
+.tech-next{
+  background:#000;
+}
+
 .tech-tailwind{
   background:#38bdf8;
   color:black;
