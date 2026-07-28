@@ -1,87 +1,136 @@
-👨‍💻 Iago Davila — Front-End Developer
+# Iago Davila — Portfólio Front-end
 
-Bem-vindo ao meu portfólio de desenvolvimento front-end.
-Aqui apresento projetos desenvolvidos durante meus estudos e práticas com foco em interfaces modernas, responsivas e experiência visual de alta qualidade.
+Portfólio pessoal desenvolvido para apresentar minha experiência, stack e
+projetos como desenvolvedor front-end.
 
-🌐 Preview do Portfólio
+O site utiliza uma identidade visual monocromática e editorial, com foco em
+hierarquia tipográfica, responsividade, acessibilidade e apresentação objetiva
+dos projetos.
 
-<p align="center">
-  <img src="./preview.png" width="600">
-</p>
+## Acesse o portfólio
 
-🔗 Acesse o site:
-https://iagodavila.github.io/Portfolio/
+[iagodavila.github.io/Portfolio](https://iagodavila.github.io/Portfolio/)
 
+## Sobre o projeto
 
-## 🚀 Tecnologias Utilizadas
+O portfólio foi construído com HTML, CSS e JavaScript puro, sem dependências de
+frameworks. A interface foi projetada para funcionar bem em computadores,
+tablets e dispositivos móveis.
 
-O portfólio foi desenvolvido utilizando as seguintes tecnologias:
+Principais recursos:
+
+- cabeçalho fixo com navegação por seções;
+- hero tipográfico com apresentação profissional;
+- faixa animada com tecnologias e competências;
+- seção Sobre com fotografia e métricas;
+- lista de projetos com imagens e tecnologias utilizadas;
+- imagens monocromáticas com transição de cor no hover;
+- animações de entrada acionadas durante a navegação;
+- botão flutuante e chamada final para contato pelo WhatsApp;
+- links diretos para e-mail, GitHub e LinkedIn;
+- favicon e identidade visual próprios;
+- suporte a preferências de movimento reduzido.
+
+## Tecnologias
 
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-264DE4?style=for-the-badge&logo=css3&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
+## Projetos apresentados
 
-📂 Projetos
-🛍️ E-commerce de Roupas
+### FamilyCare
 
-Interface de e-commerce responsiva desenvolvida com HTML, CSS e JavaScript.
+Aplicação web para organizar informações de saúde da família, incluindo
+familiares, medicamentos, alergias, comorbidades, busca rápida e modo de
+emergência.
 
-Principais características
+**Stack:** TypeScript, React, Next.js e Tailwind CSS.
 
-Layout moderno
+[Acessar o FamilyCare](https://family-care-app.iagoddc.workers.dev/)
 
-Navegação entre páginas
+### Scherr Química
 
-Organização de produtos com Flexbox e Grid
+Site institucional responsivo para uma empresa de tratamento de água
+industrial, desenvolvido com foco em performance, SEO e apresentação dos
+serviços.
 
-Estrutura responsiva
+**Stack:** HTML, CSS, JavaScript e Tailwind CSS.
 
-🎧 DevStore Slider
+[Acessar a Scherr Química](https://iagodavila.github.io/site-scherr-quimica/)
 
-Componente de slider interativo desenvolvido para exibir produtos ou banners em destaque.
+### iPhone 17 Landing Page
 
-Tecnologias utilizadas:
+Recriação de uma landing page inspirada no design da Apple, com foco em
+componentização, responsividade e fidelidade visual.
 
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS-264DE4?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+**Stack:** React, JavaScript e Tailwind CSS.
 
-Funcionalidades:
+[Acessar a landing page](https://iagodavila.github.io/Site-Apple-iPhone-17/)
 
-Navegação entre slides
+### Jardinar
 
-Transições suaves
+Landing page para uma empresa de paisagismo autoral, apresentando serviços,
+projetos recentes e formas de contato.
 
-Estrutura reutilizável
+**Stack:** HTML, CSS e JavaScript.
 
-📱 iPhone 17 Landing Page
+[Acessar o Jardinar](https://iagodavila.github.io/site-jardinar/)
 
-Clone moderno da página do iPhone 17 Pro, inspirado no design minimalista da Apple.
+### E-commerce de Roupas
 
-Tecnologias:
+Interface responsiva de e-commerce com navegação entre páginas e organização de
+produtos utilizando Flexbox e Grid.
 
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)
+**Stack:** HTML, CSS e JavaScript.
 
-Objetivo do projeto
+[Acessar o e-commerce](https://iagodavila.github.io/e-commerce-project/)
 
-Praticar componentização com React
+### DevStore Slider
 
-Criar layouts responsivos
+Componente interativo para apresentação de produtos e banners, com controles de
+navegação desenvolvidos em JavaScript.
 
-Reproduzir interfaces modernas
+**Stack:** HTML, CSS e JavaScript.
 
-Aplicar boas práticas de front-end
+[Acessar o DevStore Slider](https://iagodavila.github.io/devstore-slider/)
 
-📬 Contato
+## Executando localmente
 
-💻 GitHub
-https://github.com/IagodAvila
+Clone o repositório:
 
-💼 LinkedIn
-https://www.linkedin.com/in/iago-d-avila-851399332/
+```bash
+git clone https://github.com/IagodAvila/Portfolio.git
+cd Portfolio
+```
 
-⭐ Obrigado por visitar meu portfólio!
+Inicie um servidor local:
+
+```bash
+python3 -m http.server 4173
+```
+
+Depois, acesse `http://localhost:4173`.
+
+## Estrutura principal
+
+```text
+Portfolio/
+├── img/          # Logos e imagens dos projetos
+├── favicon.svg   # Ícone do site
+├── index.html    # Estrutura e conteúdo
+├── styles.css    # Identidade visual e responsividade
+└── script.js     # Animações e comportamento da página
+```
+
+## Contato
+
+- E-mail: [iago.davila.dev@gmail.com](mailto:iago.davila.dev@gmail.com)
+- GitHub: [IagodAvila](https://github.com/IagodAvila)
+- LinkedIn: [Iago d'Avila](https://www.linkedin.com/in/iago-d-avila-851399332/)
+
+---
+
+Desenvolvido por Iago Davila.
