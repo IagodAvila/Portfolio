@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Dashboard WePet</title>
+  <desc id="desc">Prévia do cartão digital de saúde e vacinação para pets.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f5ed"/>
+      <stop offset="1" stop-color="#e7f2e1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#173f35" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="900" fill="url(#background)"/>
+  <rect width="248" height="900" fill="#fbf7ef"/>
+  <path d="M248 0v900" stroke="#173f35" stroke-opacity=".1"/>
+
+  <g transform="translate(42 44)">
+    <rect width="50" height="50" rx="18" fill="#d9f15a"/>
+    <circle cx="19" cy="19" r="5" fill="#173f35"/>
+    <circle cx="31" cy="19" r="5" fill="#173f35"/>
+    <circle cx="14" cy="30" r="4" fill="#173f35"/>
+    <circle cx="36" cy="30" r="4" fill="#173f35"/>
+    <path d="M18 34c0-6 3-10 7-10s7 4 7 10c0 5-14 5-14 0Z" fill="#173f35"/>
+    <text x="66" y="36" fill="#173f35" font-family="Arial, sans-serif" font-size="34" font-weight="700">WePet</text>
+  </g>
+
+  <g font-family="Arial, sans-serif" font-size="17" font-weight="700">
+    <rect x="30" y="158" width="188" height="56" rx="18" fill="#173f35"/>
+    <circle cx="58" cy="186" r="9" fill="none" stroke="#fff" stroke-width="3"/>
+    <path d="M49 187h18M58 177v18" stroke="#fff" stroke-width="2"/>
+    <text x="82" y="192" fill="#fff">Início</text>
+    <text x="82" y="266" fill="#173f35" fill-opacity=".55">Carteira</text>
+    <text x="82" y="328" fill="#173f35" fill-opacity=".55">Agenda</text>
+    <text x="82" y="390" fill="#173f35" fill-opacity=".55">Perfil</text>
+  </g>
+
+  <rect x="30" y="674" width="188" height="142" rx="28" fill="#dcefd8"/>
+  <circle cx="68" cy="714" r="21" fill="#fff" fill-opacity=".7"/>
+  <text x="51" y="721" fill="#173f35" font-family="Arial, sans-serif" font-size="22" font-weight="700">?</text>
+  <text x="50" y="758" fill="#173f35" font-family="Arial, sans-serif" font-size="15" font-weight="700">Precisa de ajuda?</text>
+  <text x="50" y="783" fill="#173f35" fill-opacity=".58" font-family="Arial, sans-serif" font-size="12">Fale com o time WePet.</text>
+
+  <g transform="translate(298 58)" font-family="Arial, sans-serif">
+    <text x="0" y="20" fill="#173f35" fill-opacity=".5" font-size="14" font-weight="700" letter-spacing="2">TERÇA-FEIRA, 28 DE JULHO</text>
+    <text x="0" y="73" fill="#172d28" font-size="46" font-weight="700">Olá, Marina!</text>
+    <text x="0" y="103" fill="#172d28" fill-opacity=".5" font-size="16">Bento está com os cuidados em dia.</text>
+
+    <rect x="0" y="144" width="102" height="40" rx="20" fill="#173f35"/>
+    <text x="26" y="170" fill="#fff" font-size="14" font-weight="700">Bento</text>
+    <rect x="112" y="144" width="92" height="40" rx="20" fill="#fff" stroke="#173f35" stroke-opacity=".12"/>
+    <text x="140" y="170" fill="#173f35" fill-opacity=".62" font-size="14" font-weight="700">Nina</text>
+
+    <g filter="url(#shadow)">
+      <rect x="0" y="210" width="620" height="330" rx="34" fill="#173f35"/>
+      <circle cx="560" cy="250" r="96" fill="none" stroke="#fff" stroke-opacity=".04" stroke-width="42"/>
+      <rect x="28" y="238" width="205" height="274" rx="26" fill="#b9815b"/>
+      <path d="M70 386c15-76 111-98 137-9v135H70Z" fill="#a86d49"/>
+      <ellipse cx="137" cy="334" rx="63" ry="71" fill="#e0b58f"/>
+      <path d="M83 296c-21-38 16-66 45-26M191 296c21-38-16-66-45-26" fill="#8e583c"/>
+      <circle cx="115" cy="330" r="6" fill="#172d28"/>
+      <circle cx="160" cy="330" r="6" fill="#172d28"/>
+      <ellipse cx="138" cy="352" rx="10" ry="7" fill="#172d28"/>
+      <rect x="44" y="462" width="88" height="30" rx="15" fill="#fff" fill-opacity=".9"/>
+      <circle cx="59" cy="477" r="4" fill="#31a66a"/>
+      <text x="69" y="482" fill="#173f35" font-size="11" font-weight="700">Saudável</text>
+
+      <text x="270" y="263" fill="#d9f15a" font-size="13" font-weight="700" letter-spacing="2">MEU COMPANHEIRO</text>
+      <text x="270" y="315" fill="#fff" font-size="43" font-weight="700">Bento</text>
+      <text x="270" y="345" fill="#fff" fill-opacity=".58" font-size="15">Golden Retriever • Macho</text>
+      <path d="M270 372h305" stroke="#fff" stroke-opacity=".11"/>
+      <text x="270" y="405" fill="#fff" fill-opacity=".4" font-size="11" font-weight="700">IDADE</text>
+      <text x="377" y="405" fill="#fff" fill-opacity=".4" font-size="11" font-weight="700">PESO</text>
+      <text x="475" y="405" fill="#fff" fill-opacity=".4" font-size="11" font-weight="700">MICROCHIP</text>
+      <text x="270" y="428" fill="#fff" font-size="15" font-weight="700">4 anos</text>
+      <text x="377" y="428" fill="#fff" font-size="15" font-weight="700">31,8 kg</text>
+      <text x="475" y="428" fill="#fff" font-size="15" font-weight="700">Registrado</text>
+      <rect x="270" y="458" width="242" height="52" rx="17" fill="#d9f15a"/>
+      <text x="298" y="490" fill="#173f35" font-size="14" font-weight="700">▦  Abrir cartão digital</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="650" y="210" width="395" height="158" rx="32" fill="#e4f0de"/>
+      <text x="680" y="254" fill="#173f35" fill-opacity=".5" font-size="12" font-weight="700" letter-spacing="1.5">ÍNDICE DE CUIDADO</text>
+      <text x="680" y="322" fill="#173f35" font-size="52" font-weight="700">96%</text>
+      <rect x="680" y="337" width="330" height="8" rx="4" fill="#fff" fill-opacity=".7"/>
+      <rect x="680" y="337" width="316" height="8" rx="4" fill="#173f35"/>
+
+      <rect x="650" y="394" width="395" height="146" rx="32" fill="#f3dfd1"/>
+      <text x="680" y="434" fill="#985c38" font-size="12" font-weight="700" letter-spacing="1.5">PRÓXIMO CUIDADO</text>
+      <text x="680" y="474" fill="#172d28" font-size="27" font-weight="700">Vacina antirrábica</text>
+      <rect x="680" y="492" width="108" height="31" rx="15" fill="#fff" fill-opacity=".55"/>
+      <text x="700" y="512" fill="#764324" font-size="12" font-weight="700">Em 12 dias</text>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="0" y="570" width="620" height="200" rx="32" fill="#fff"/>
+      <text x="28" y="608" fill="#173f35" fill-opacity=".45" font-size="12" font-weight="700" letter-spacing="1.5">CARTEIRA DE VACINAÇÃO</text>
+      <text x="28" y="642" fill="#172d28" font-size="25" font-weight="700">Últimas vacinas</text>
+      <circle cx="55" cy="690" r="20" fill="#dcefd8"/>
+      <path d="m46 690 7 7 13-15" fill="none" stroke="#173f35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="87" y="686" fill="#172d28" font-size="14" font-weight="700">V10 Polivalente</text>
+      <text x="87" y="707" fill="#172d28" fill-opacity=".43" font-size="11">Vet Vila Madalena • 18 jun 2026</text>
+      <path d="M28 731h564" stroke="#173f35" stroke-opacity=".1"/>
+    </g>
+
+    <g filter="url(#shadow)">
+      <rect x="650" y="570" width="395" height="200" rx="32" fill="#fff"/>
+      <text x="680" y="608" fill="#173f35" fill-opacity=".45" font-size="12" font-weight="700" letter-spacing="1.5">HISTÓRICO</text>
+      <text x="680" y="642" fill="#172d28" font-size="25" font-weight="700">Cuidados recentes</text>
+      <circle cx="700" cy="690" r="18" fill="#dcefd8"/>
+      <text x="730" y="687" fill="#172d28" font-size="14" font-weight="700">Vacina V10 aplicada</text>
+      <text x="730" y="707" fill="#172d28" fill-opacity=".43" font-size="11">18 jun • Vet Vila Madalena</text>
+    </g>
+  </g>
+</svg>

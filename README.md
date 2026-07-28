@@ -61,6 +61,15 @@ serviços.
 
 [Acessar a Scherr Química](https://iagodavila.github.io/site-scherr-quimica/)
 
+### WePet
+
+Cartão digital para centralizar informações de saúde, vacinação e cuidados dos
+pets em uma experiência responsiva e fácil de consultar.
+
+**Stack:** React, Next.js, TypeScript e Tailwind CSS.
+
+[Acessar o WePet](https://we-pet.vercel.app/)
+
 ### iPhone 17 Landing Page
 
 Recriação de uma landing page inspirada no design da Apple, com foco em
