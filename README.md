@@ -1,4 +1,4 @@
-# Iago Davila — Portfólio Front-end
+# Iago d'Avila — Portfólio Front-end
 
 Portfólio pessoal desenvolvido para apresentar minha experiência, stack e
 projetos como desenvolvedor front-end.
@@ -133,4 +133,4 @@ Portfolio/
 
 ---
 
-Desenvolvido por Iago Davila.
+Desenvolvido por Iago d'Avila.
