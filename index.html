@@ -53,9 +53,42 @@
           <a href="#contato">Contato</a>
         </nav>
 
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Abrir menu de navegação"
+        >
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
         <a class="availability" href="mailto:iago.davila.dev@gmail.com">
           Disponível
         </a>
+
+        <a class="mobile-contact" href="mailto:iago.davila.dev@gmail.com">
+          Disponível
+        </a>
+
+        <nav
+          class="mobile-nav"
+          id="mobile-nav"
+          aria-label="Navegação mobile"
+          hidden
+        >
+          <a href="#sobre"><span>01</span>Sobre</a>
+          <a href="#projetos"><span>02</span>Projetos</a>
+          <a href="#stack"><span>03</span>Stack</a>
+          <a href="#contato"><span>04</span>Contato</a>
+          <a class="mobile-availability" href="mailto:iago.davila.dev@gmail.com">
+            Disponível para projetos <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
       </div>
     </header>
 
