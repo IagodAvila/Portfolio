@@ -51,6 +51,15 @@ emergência.
 
 [Acessar o FamilyCare](https://family-care-app.iagoddc.workers.dev/)
 
+### Vieste Concetto
+
+Reformulação do site institucional e e-commerce de uma marca brasileira de
+moda, com experiência editorial, catálogo, busca, favoritos e sacola de compras.
+
+**Stack:** TypeScript, React, Next.js e Tailwind CSS.
+
+[Acessar a Vieste Concetto](https://vieste-concetto.vercel.app/)
+
 ### Scherr Química
 
 Site institucional responsivo para uma empresa de tratamento de água
