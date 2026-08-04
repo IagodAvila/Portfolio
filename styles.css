@@ -403,13 +403,16 @@ ol {
   font-size: 0.75rem;
 }
 
+.project {
+  padding-block: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .project > a {
   display: grid;
   grid-template-columns: 80px 1fr 1fr;
   align-items: start;
   gap: 2rem;
-  padding-block: 3rem;
-  border-bottom: 1px solid var(--border);
 }
 
 .project > a:hover {
@@ -489,6 +492,96 @@ ol {
 .project a:hover .project-image img {
   filter: grayscale(0);
   transform: scale(1.03);
+}
+
+.case-study {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.case-study summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.case-study summary::-webkit-details-marker {
+  display: none;
+}
+
+.case-study summary:hover,
+.case-study[open] summary {
+  color: var(--foreground);
+}
+
+.case-study summary:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
+}
+
+.case-study-icon {
+  position: relative;
+  flex: 0 0 auto;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease;
+}
+
+.case-study-icon::before,
+.case-study-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+}
+
+.case-study-icon::before {
+  width: 0.625rem;
+  height: 1px;
+}
+
+.case-study-icon::after {
+  width: 1px;
+  height: 0.625rem;
+}
+
+.case-study[open] .case-study-icon {
+  transform: rotate(45deg);
+}
+
+.case-study-body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  animation: reveal-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.case-study-body h4 {
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.case-study-body p {
+  margin-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  line-height: 1.7;
 }
 
 .stack-list {
@@ -818,6 +911,11 @@ ol {
     grid-column: 2;
   }
 
+  .case-study-body {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
   .stack-list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -860,10 +958,13 @@ ol {
     padding-block: 3rem;
   }
 
+  .project {
+    padding-block: 2.5rem;
+  }
+
   .project > a {
     grid-template-columns: 1fr;
     gap: 1.25rem;
-    padding-block: 2.5rem;
   }
 
   .project-image {
