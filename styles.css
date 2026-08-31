@@ -584,6 +584,19 @@ ol {
   line-height: 1.7;
 }
 
+.case-study-media {
+  grid-column: 1 / -1;
+  margin-top: 0.5rem;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.case-study-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .stack-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

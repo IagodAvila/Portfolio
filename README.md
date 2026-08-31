@@ -1,7 +1,7 @@
-# Iago d'Avila — Portfólio Front-end
+# Iago d'Avila — Portfólio Full-Stack
 
 Portfólio pessoal desenvolvido para apresentar minha experiência, stack e
-projetos como desenvolvedor front-end.
+projetos como desenvolvedor Full-Stack.
 
 O site utiliza uma identidade visual monocromática e editorial, com foco em
 hierarquia tipográfica, responsividade, acessibilidade e apresentação objetiva
@@ -70,6 +70,17 @@ serviços.
 
 [Acessar a Scherr Química](https://iagodavila.github.io/site-scherr-quimica/)
 
+### Austen Cervejaria
+
+Redesign completo do site institucional de uma cervejaria artesanal de
+Vespasiano (MG), com experiência narrativa por "capítulos", animações
+coordenadas de scroll e layout totalmente responsivo. Proposta fria criada como
+peça de portfólio.
+
+**Stack:** React 19, Vite, Tailwind CSS e GSAP (ScrollTrigger, Lenis, Split Type).
+
+[Acessar a Austen Cervejaria](https://austen-cervejaria.vercel.app/)
+
 ### WePet
 
 Cartão digital para centralizar informações de saúde, vacinação e cuidados dos
@@ -105,15 +116,6 @@ produtos utilizando Flexbox e Grid.
 **Stack:** HTML, CSS e JavaScript.
 
 [Acessar o e-commerce](https://iagodavila.github.io/e-commerce-project/)
-
-### DevStore Slider
-
-Componente interativo para apresentação de produtos e banners, com controles de
-navegação desenvolvidos em JavaScript.
-
-**Stack:** HTML, CSS e JavaScript.
-
-[Acessar o DevStore Slider](https://iagodavila.github.io/devstore-slider/)
 
 ## Executando localmente
 
