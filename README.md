@@ -9,7 +9,8 @@ dos projetos.
 
 ## Acesse o portfólio
 
-[iagodavila.github.io/Portfolio](https://iagodavila.github.io/Portfolio/)
+- Português: [iagodavila.github.io/Portfolio](https://iagodavila.github.io/Portfolio/)
+- English: [iagodavila.github.io/Portfolio/en](https://iagodavila.github.io/Portfolio/en/)
 
 ## Sobre o projeto
 
@@ -24,11 +25,12 @@ Principais recursos:
 - faixa animada com tecnologias e competências;
 - seção Sobre com fotografia e métricas;
 - lista de projetos com imagens e tecnologias utilizadas;
-- imagens monocromáticas com transição de cor no hover;
+- imagens dos projetos em cores, com leve zoom no hover;
 - animações de entrada acionadas durante a navegação;
 - botão flutuante e chamada final para contato pelo WhatsApp;
 - links diretos para e-mail, GitHub e LinkedIn;
 - favicon e identidade visual próprios;
+- versão em inglês em `/en/`, com seletor de idioma e `hreflang` recíproco;
 - suporte a preferências de movimento reduzido.
 
 ## Tecnologias
@@ -38,6 +40,11 @@ Principais recursos:
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
+O portfólio também documenta minha prática com desenvolvimento assistido por IA:
+Claude Code e OpenAI Codex no fluxo de trabalho, com skills customizadas,
+servidores MCP e agentes especializados para revisão de código, testes e
+automação de tarefas repetitivas.
 
 ## Projetos apresentados
 
@@ -138,12 +145,18 @@ Depois, acesse `http://localhost:4173`.
 
 ```text
 Portfolio/
-├── img/          # Logos e imagens dos projetos
-├── favicon.svg   # Ícone do site
-├── index.html    # Estrutura e conteúdo
-├── styles.css    # Identidade visual e responsividade
-└── script.js     # Animações e comportamento da página
+├── en/
+│   └── index.html  # Versão em inglês (lang="en")
+├── img/            # Logos e imagens dos projetos
+├── favicon.svg     # Ícone do site
+├── index.html      # Versão em português (lang="pt-BR")
+├── styles.css      # Identidade visual e responsividade (compartilhado)
+└── script.js       # Animações e comportamento da página (compartilhado)
 ```
+
+As duas versões compartilham `styles.css` e `script.js`. Ao alterar conteúdo,
+atualize `index.html` e `en/index.html` juntos para manter os idiomas em
+sincronia.
 
 ## Contato
 

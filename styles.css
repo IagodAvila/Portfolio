@@ -182,6 +182,40 @@ ol {
   transform: rotate(-45deg);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.lang-switch .lang-current {
+  color: var(--foreground);
+}
+
+.lang-switch a {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.lang-switch > * + *::before {
+  content: "/";
+  margin: 0 0.5rem;
+  color: var(--border);
+}
+
+.lang-switch a:hover,
+.lang-switch a:focus-visible {
+  color: var(--foreground);
+}
+
 .availability {
   border: 1px solid var(--border);
   padding: 0.65rem 1rem;
@@ -334,14 +368,10 @@ ol {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: 50% 30%;
-  filter: grayscale(1);
-  transition:
-    filter 0.5s ease,
-    transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .about-photo:hover img {
-  filter: grayscale(0);
   transform: scale(1.02);
 }
 
@@ -483,14 +513,10 @@ ol {
   aspect-ratio: 16 / 10;
   object-fit: cover;
   object-position: top;
-  filter: grayscale(1);
-  transition:
-    filter 0.5s ease,
-    transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .project a:hover .project-image img {
-  filter: grayscale(0);
   transform: scale(1.03);
 }
 
@@ -600,20 +626,27 @@ ol {
 .stack-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  border: 1px solid var(--border);
-  background: var(--border);
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
 }
 
 .stack-list li {
   padding: 1.25rem 1.5rem;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
   background: var(--background);
   font-size: 0.875rem;
   transition: background 0.2s ease;
 }
 
-.stack-list li:hover {
+.stack-list li:not(.stack-filler):hover {
   background: var(--secondary);
+}
+
+.stack-filler {
+  color: var(--border);
+  letter-spacing: 0.15em;
+  user-select: none;
 }
 
 .contact-section {
@@ -813,7 +846,7 @@ ol {
     margin-left: auto;
   }
 
-  .availability {
+  .header-actions {
     display: none;
   }
 
@@ -856,7 +889,7 @@ ol {
     display: none;
   }
 
-  .mobile-nav > a:not(.mobile-availability) {
+  .mobile-nav > a:not(.mobile-availability):not(.mobile-lang) {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -869,12 +902,12 @@ ol {
       background 0.2s ease;
   }
 
-  .mobile-nav > a:not(.mobile-availability):hover,
-  .mobile-nav > a:not(.mobile-availability):focus-visible {
+  .mobile-nav > a:not(.mobile-availability):not(.mobile-lang):hover,
+  .mobile-nav > a:not(.mobile-availability):not(.mobile-lang):focus-visible {
     background: var(--secondary);
   }
 
-  .mobile-nav > a:not(.mobile-availability) span {
+  .mobile-nav > a:not(.mobile-availability):not(.mobile-lang) span {
     color: var(--muted);
     font-family: var(--body);
     font-size: 0.625rem;
@@ -891,6 +924,27 @@ ol {
     font-size: 0.6875rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+  }
+
+  .mobile-lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.6875rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition:
+      color 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .mobile-lang:hover,
+  .mobile-lang:focus-visible {
+    color: var(--foreground);
+    background: var(--secondary);
   }
 
   .hero {
@@ -931,6 +985,10 @@ ol {
 
   .stack-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stack-filler:last-child {
+    display: none;
   }
 }
 
@@ -990,6 +1048,10 @@ ol {
 
   .stack-list {
     grid-template-columns: 1fr;
+  }
+
+  .stack-filler {
+    display: none;
   }
 
   .contact-section h2 {
